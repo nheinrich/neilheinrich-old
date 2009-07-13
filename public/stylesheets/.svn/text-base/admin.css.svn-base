@@ -1,0 +1,326 @@
+	
+/*----------------------------------------------------*/
+/* Undo                                               */
+/*----------------------------------------------------*/
+
+* {
+  background-color: transparent;
+  border: none;
+	border-collapse: collapse;
+  color: inherit;
+  font: inherit;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  text-indent: 0;
+	}
+
+
+/*----------------------------------------------------*/
+/* Container                                          */
+/*----------------------------------------------------*/
+
+.container {
+	position: relative;
+	width: 840px;
+	margin: 0 auto;
+	background: #fff;
+	}
+
+
+/*----------------------------------------------------*/
+/* Header                                             */
+/*----------------------------------------------------*/
+
+.header {
+	width: 100%;
+	height: 205px;
+	background: #cf0;
+	}
+
+.header .contact {
+	height: 20px;
+	background: url("/images/bg_contact.gif");
+	}	
+
+.header .contact ul {
+	padding-top: 10px; 
+	}
+
+.header .contact ul li {
+	width: 210px;
+	padding-left: 10px;
+	float: left; 
+	}
+
+.header img.badge {
+	position: absolute;
+	top: 8px;
+	right:10px;
+	width: 91px;
+	height: 91px;
+	}
+
+/*----------------------------------------------------*/
+/* Content                                            */
+/*----------------------------------------------------*/	
+
+.content {
+	border: 0px;
+	padding-top: 225px;
+	width: 840px;
+	background: #fff;
+	text-align: left;
+	overflow: hidden;
+	}
+
+	
+
+
+/* Nav Specific -------------------------------------*/
+	
+.note {
+	height: 20px;
+	border: 0px;
+	padding: 0px;
+	background-image:url("../img/_bg_note.gif");
+	background-repeat: repeat-x;
+	text-align: left;
+	color: #808080; 
+	line-height:0px;
+	}
+	
+.notes {
+	width: 200px;
+	padding: 10px 0px 0px 10px;
+	float: left;
+	}
+
+
+	
+.name {
+	width: 200px;
+	padding: 33px 0px 0px 10px;		/* If this is changed, change links as well, padding-top should be 9 more  */
+	float: left;
+	}
+
+	
+.links {
+	width: 200px;
+	padding: 42px 0px 0px 10px;  	/* If this is changed, change name as well, padding-top should be 9 less  */
+	float: left;
+	}
+		
+.links,	
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #808080;
+	line-height:0px;
+	background: transparent;
+	border:0px;
+	}	
+
+
+
+
+/* Admin Specific -----------------------------------*/
+
+.admin_form {
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	display: block;
+	float:left;
+	}
+
+.admin_brief {
+	width: 410px;
+	padding: 10px 0px 0px 10px;
+	color: #808080; 
+	float: left;
+	}
+	
+.admin_option {
+	width: 200px;
+	padding: 10px 0px 0px 10px;
+	float: left;
+	}
+	
+.admin_update {
+	width: 200px;
+	padding: 0px;
+	float: left;
+	}
+
+
+
+
+/* Content Specific ---------------------------------*/
+
+.entry {
+	border-top: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+	display: block;
+	float:left;
+	}
+	
+.preview {
+	width: 420px;
+	height: 185px;
+	padding: 0px;
+	float: left;
+	}
+	
+.preview img{
+	width: 420px;
+	height: 185px;
+	padding: 0px;
+	}
+	
+.details {
+	width: 190px;
+	height: 165px;
+	background: #F1F1F1;
+	padding: 10px;
+	float: left;
+	}
+	
+.brief {
+	width: 190px;
+	height: 165px;
+	background: #fff;
+	background-image: url('../img/_bg_brief.gif');
+	background-repeat: no-repeat;
+	padding: 10px;
+	float: left;
+	}
+	
+.details h1 {						/* This one's a bit different then the index.css, the margin bottom is 4 less */
+	font-size: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	padding-top: 1px;
+	line-height:0px;
+	color: #268F3A;
+	margin-bottom: 12px;
+	display: block;
+	}
+	
+	
+.brief h1 {
+	font-size: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height:0px;
+	color: #0071BA;
+	margin-bottom: 14px;
+	display: block;
+	}
+	
+h2 {
+	font-size: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height:0px;
+	color: #F06422;
+	margin-bottom: 10px;
+	display: block;
+	}
+		
+p {
+	color: #999999;
+	display: block;
+	}
+
+p span {
+	color: #957348
+	}
+	
+
+.shadow {
+	width: 840px;
+	height: 22px;
+	background-image: url('../img/_bg_shadow.gif');
+	background-repeat: repeat-x;
+	float: left;
+	}
+	
+.shadowtop {
+	width: 840px;
+	height: 11px;
+	background-image: url('../img/_bg_shadowtop.gif');
+	background-repeat: repeat-x;
+	float: left;
+	}
+	
+	
+	
+	
+/* Miscellaneous -------------------------------------*/
+
+
+.rolebox,
+.techbox,
+.imagebox,
+.wwwbox
+    { 
+	color: #999999; 
+	background-color: #F1F1F1;
+	border: 0px; 
+	font-size: 10px; 
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+	
+.rolebox {
+	width: 190px; 
+	height: 20px; 
+	}
+	
+.techbox {
+	width: 190px; 
+	height: 77px; 
+	}
+
+.imagebox {
+	width: 190px; 
+	height: 20px; 
+	}
+
+.wwwbox {
+	width: 190px; 
+	height: 20px; 
+	}
+	
+.clientbox,
+.genrebox,
+.briefbox { 
+	background-color: #FFF;
+	border: 0px; 
+	font-size: 10px; 
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	}
+	
+.clientbox {
+	color: #0071BA; 
+	width: 190px; 
+	height: 20px; 
+	}
+
+.genrebox {
+	color: #999999; 
+	width: 190px; 
+	height: 20px; 
+	}
+
+.briefbox {
+	color: #999999; 
+	width: 190px; 
+	height: 125px; 
+	}

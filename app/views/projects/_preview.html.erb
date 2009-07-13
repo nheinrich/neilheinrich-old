@@ -1,0 +1,10 @@
+<div class='preview'>
+  <% for preview in @project.previews %>
+    <% fields_for "project[preview_attributes][]", preview do |p|  %>
+      <p>
+        <label for="preview">Upload A Preview:</label>
+        <%= p.file_field :uploaded_data %>
+      </p>
+    <% end %>
+  <% end %>
+</div>

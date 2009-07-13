@@ -1,0 +1,68 @@
+<p>
+  <b>Name:</b>
+  <%=h @project.name %>
+</p>
+
+<p>
+  <b>Brief:</b>
+  <%=h @project.brief %>
+</p>
+
+<p>
+  <b>Client:</b>
+  <%=h @project.client %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @project.created_at %>
+</p>
+
+<p>
+  <b>Contribution:</b>
+  <%=h @project.contribution %>
+</p>
+
+<p>
+  <b>Partner:</b>
+  <%=h @project.partner %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%=h @project.cost %>
+</p>
+
+<p>
+  <b>Days:</b>
+  <%=h @project.days %>
+</p>
+
+<p>
+  <b>Enjoyment:</b>
+  <%=h @project.enjoyment %>
+</p>
+
+<p>
+  <b>Permission:</b>
+  <%=h @project.permission %>
+</p>
+
+<p>
+  <b>Visible:</b>
+  <%=h @project.visible %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%=h @project.url %>
+</p>
+
+<p>
+  <b>Completed on:</b>
+  <%=h @project.completed_on %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

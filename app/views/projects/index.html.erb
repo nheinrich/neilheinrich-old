@@ -1,0 +1,44 @@
+<h1>Listing projects</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Brief</th>
+    <th>Client</th>
+    <th>Created at</th>
+    <th>Contribution</th>
+    <th>Partner</th>
+    <th>Cost</th>
+    <th>Days</th>
+    <th>Enjoyment</th>
+    <th>Permission</th>
+    <th>Visible</th>
+    <th>Url</th>
+    <th>Completed on</th>
+  </tr>
+
+<% for project in @projects %>
+  <tr>
+    <td><%=h project.name %></td>
+    <td><%=h project.brief %></td>
+    <td><%=h project.client %></td>
+    <td><%=h project.created_at %></td>
+    <td><%=h project.contribution %></td>
+    <td><%=h project.partner %></td>
+    <td><%=h project.cost %></td>
+    <td><%=h project.days %></td>
+    <td><%=h project.enjoyment %></td>
+    <td><%=h project.permission %></td>
+    <td><%=h project.visible %></td>
+    <td><%=h project.url %></td>
+    <td><%=h project.completed_on %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New project', new_project_path %>

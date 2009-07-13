@@ -1,0 +1,39 @@
+img.badge {	behavior: url("/stylesheets/ie6pngfix.htc"); }
+.preview .center { height: 97px; }
+.content .project .links { position: absolute;	top: 95px; }
+.project { margin-bottom: 7px; }
+.top, .bottom { overflow: hidden;}
+.content .project .handle { position: relative; top: -10px; right: -205px; }
+.shadow { overflow: hidden; display: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+span.i_cant_believe_youre_using_ie6 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #333;
+	padding: 2px 0 0 10px;
+	height: 20px;
+	display: block;
+	background: #f5f5f5;
+}
+span.i_cant_believe_youre_using_ie6 a {
+	color: #333;
+	text-decoration: underline;
+}
+span.i_cant_believe_youre_using_ie6 li {
+		color: #333;
+}
+ul.contact {
+	display: none;
+}

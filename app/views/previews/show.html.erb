@@ -1,0 +1,15 @@
+<p><%= @preview.filename %></p>
+
+<% if @preview.content_type == "application/x-shockwave-flash" %>
+  <div id='swf'></div>
+
+  <script type='text/javascript'>
+    var swf = new Swiff("<%= @preview.public_filename %>", 
+      {width: 768, height: 320}
+    );
+    $('swf').grab(swf);
+  </script>
+<% else %>
+  <%= image_tag @preview.public_filename %>
+  <%= image_tag @preview.public_filename(:thumb) %>  
+<% end %>

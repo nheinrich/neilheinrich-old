@@ -1,0 +1,68 @@
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Brief</b><br />
+    <%= f.text_area :brief %>
+  </p>
+
+  <p>
+    <b>Client</b><br />
+    <%= f.text_field :client %>
+  </p>
+
+  <p>
+    <b>Created at</b><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+
+  <p>
+    <b>Contribution</b><br />
+    <%= f.text_field :contribution %>
+  </p>
+
+  <p>
+    <b>Partner</b><br />
+    <%= f.text_field :partner %>
+  </p>
+
+  <p>
+    <b>Cost</b><br />
+    <%= f.text_field :cost %>
+  </p>
+
+  <p>
+    <b>Days</b><br />
+    <%= f.text_field :days %>
+  </p>
+
+  <p>
+    <b>Enjoyment</b><br />
+    <%= f.text_field :enjoyment %>
+  </p>
+
+  <p>
+    <b>Permission</b><br />
+    <%= f.text_field :permission %>
+  </p>
+
+  <p>
+    <b>Visible</b><br />
+    <%= f.check_box :visible %>
+  </p>
+
+  <p>
+    <b>Url</b><br />
+    <%= f.text_field :url %>
+  </p>
+
+  <p>
+    <b>Completed on</b><br />
+    <%= f.date_select :completed_on %>
+  </p>
+  
+  <div id='previews'>
+    <%= render :partial => 'preview', :collection => @project.previews %>
+  </div>

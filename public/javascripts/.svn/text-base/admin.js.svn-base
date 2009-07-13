@@ -1,0 +1,115 @@
+// JavaScript Document
+
+
+
+/* Function filters out the link from the text href's and sends the id to the edit function */
+function editfilter(id) {
+	
+	// Make sure JavaScript is enabled
+	if (!document.getElementById) return false; 
+	
+	// Add the showNewsletter() onclick event to the newsletter signup link on the home page		
+	var textlink = document.getElementById(id);
+	textink.onclick = function() {
+		edit(id);
+		return false;
+	}
+	
+}
+
+
+/* Function displays text field when entry area is clicked */
+
+function edit(id) {
+	
+	// Make sure JavaScript is enabled
+	if (!document.getElementById) return false;
+	
+	var text = document.getElementById(id);
+	var text_edit = document.getElementById(id + "_edit");
+	
+	// If the form is hidden, show it and hide signup link
+	if (text_edit.style.display == 'none') {
+		text_edit.style.display = 'block';
+		text.style.display = 'none';
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Create the XMLHttpRequest object
+
+
+var xmlhttp=false;
+try {
+	xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+} catch (e) {
+	try {
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	} catch (E) {
+		xmlhttp = false;
+	}
+}
+
+if (!xmlhttp && typeof XMLHttpRequest!='undefined') {
+	xmlhttp = new XMLHttpRequest();
+}
+
+/*
+ * Adds the JavaScript to the XHTML, so it is unobtrusive
+ */
+
+function editSubmit(id) {
+	
+	// Make sure JavaScript is enabled
+	if (!document.getElementById) return false; 
+	
+	// Add the doNewsletterSignup() onclick event to the signup link on the home page	
+	var newsletterFormSubmit = document.getElementById("newsletterFormSubmit");	
+	newsletterFormSubmit.onclick = function() {
+		doNewsletterSignup();
+		return false;
+	}
+}
+
+/*
+ * Uses AJAX to call newsletter/signup.php
+ */
+
+function doNewsletterSignup() {
+
+	// Make sure JavaScript is enabled
+	if (!document.getElementById) return false; 
+	
+	var valBox = document.getElementById("newsletteremail");
+	var newsletter = document.getElementById("newsletter");
+	
+	xmlhttp.open("GET","http://www.thinkvitamin.com/newsletter/doSignup.php?email="+valBox.value,true);
+	xmlhttp.onreadystatechange=function() {
+		if (xmlhttp.readyState==4) {			
+			if (xmlhttp.responseText != "")
+				// Replace the news, if we got a response from doSignup.php
+				// It won't return anything, if they don't enter an email address
+				newsletter.innerHTML = xmlhttp.responseText;
+		}
+	}
+	xmlhttp.send(null);	
+}
+
+// Add the JavaScript to appropriate places so it's not obtrusive in the XHTML
+addLoadEvent(prepareNewsletter);
